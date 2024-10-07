@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png.jpeg" alt="College Logo" class="logo">
+        <h1>College Management System</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="#" class="nav-link" data-section="home">Home</a>
+        <a href="#" class="nav-link" data-section="login">Login</a>
+        <a href="#" class="nav-link" data-section="signup">Signup</a>
+        <a href="#" class="nav-link" data-section="dashboard">Dashboard</a>
+        <a href="#" class="nav-link" data-section="registration">Registration</a>
+        <a href="#" class="nav-link" data-section="about">About Us</a>
+        <a href="#" class="nav-link" data-section="contactus">Contact Us</a>
+    </div>
+
+    <!-- Section Containers -->
+    <div id="content-area">
+        <section id="home" class="content-section">
+            <h3>Welcome to Our College Management System</h3>
+            <p>Our platform helps students, faculty, and staff to manage academic information, track progress, and communicate efficiently.</p>
+            <p>Please use the navigation menu to access different sections of the website.</p>
+        </section>
+
+        <section id="login" class="content-section">
+            <h3>Login</h3>
+            <form id="loginForm">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="email" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="password" required>
+                <button type="submit">Login</button>
+                <div id="loginError"></div>
+                <div id="loginSuccess"></div>
+            </form>
+        </section>
+
+        <section id="signup" class="content-section">
+            <h3>Signup</h3>
+            <form id="signupForm">
+                <label for="signupUsername">Username:</label>
+                <input type="text" id="signupUsername" name="username" required>
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" name="email" required>
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="password" required>
+                <button type="submit">Signup</button>
+                <div id="signupError"></div>
+                <div id="signupSuccess"></div>
+            </form>
+        </section>
+
+        <section id="dashboard" class="content-section">
+            <h3>Dashboard</h3>
+            <p>Welcome to your dashboard. Choose an option from the menu.</p>
+        </section>
+
+        <section id="registration" class="content-section">
+            <h3>Registration</h3>
+            <form id="registrationForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="course">Course:</label>
+                <input type="text" id="course" name="course" required>
+                <button type="submit">Register</button>
+                <div id="registrationError"></div>
+                <div id="registrationSuccess"></div>
+            </form>
+        </section>
+
+        <section id="about" class="content-section">
+            <h3>About Us</h3>
+            <p>Our mission is to provide quality education to all students.</p>
+        </section>
+
+        <section id="contactus" class="content-section">
+            <h3>Contact Us</h3>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="contactEmail">Email:</label>
+                <input type="email" id="contactEmail" name="contactEmail" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+                <div id="contactError"></div>
+                <div id="contactSuccess"></div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
